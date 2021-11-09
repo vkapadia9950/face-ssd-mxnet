@@ -1,0 +1,964 @@
+Namespace(amp=False, batch_size=32, dali=False, data_shape=512, dataset='voc', dataset_root='~/.mxnet/datasets/', epochs=240, gpus='0,1', horovod=False, log_interval=100, lr=0.001, lr_decay=0.1, lr_decay_epoch='160,200', momentum=0.9, network='mobilenet1.0', num_workers=4, resume='', save_interval=10, save_prefix='ssd_512_mobilenet1.0_voc', seed=233, start_epoch=0, syncbn=False, val_interval=1, wd=0.0005)
+Start training from [Epoch 0]
+[Epoch 0] Training cost: 882.530, CrossEntropy=4.843, SmoothL1=3.804
+[Epoch 0] Validation: 
+fire=0.0005778120184899846
+mAP=0.0005778120184899846
+[Epoch 1] Training cost: 812.812, CrossEntropy=3.307, SmoothL1=3.045
+[Epoch 1] Validation: 
+fire=0.004632015793318374
+mAP=0.004632015793318374
+[Epoch 2] Training cost: 968.687, CrossEntropy=2.876, SmoothL1=2.925
+[Epoch 2] Validation: 
+fire=0.019051941794456184
+mAP=0.019051941794456184
+[Epoch 3] Training cost: 711.938, CrossEntropy=2.708, SmoothL1=2.805
+[Epoch 3] Validation: 
+fire=0.031801163950333645
+mAP=0.031801163950333645
+[Epoch 4] Training cost: 728.694, CrossEntropy=2.615, SmoothL1=2.781
+[Epoch 4] Validation: 
+fire=0.05693168179359029
+mAP=0.05693168179359029
+[Epoch 5] Training cost: 789.744, CrossEntropy=2.549, SmoothL1=2.543
+[Epoch 5] Validation: 
+fire=0.13021559814448408
+mAP=0.13021559814448408
+[Epoch 6] Training cost: 719.272, CrossEntropy=2.523, SmoothL1=2.440
+[Epoch 6] Validation: 
+fire=0.06160586937162046
+mAP=0.06160586937162046
+[Epoch 7] Training cost: 705.305, CrossEntropy=2.481, SmoothL1=2.489
+[Epoch 7] Validation: 
+fire=0.07913722080142374
+mAP=0.07913722080142374
+[Epoch 8] Training cost: 802.040, CrossEntropy=2.438, SmoothL1=2.459
+[Epoch 8] Validation: 
+fire=0.060759886082236994
+mAP=0.060759886082236994
+[Epoch 9] Training cost: 746.173, CrossEntropy=2.431, SmoothL1=2.304
+[Epoch 9] Validation: 
+fire=0.08577953523638417
+mAP=0.08577953523638417
+[Epoch 10] Training cost: 752.186, CrossEntropy=2.423, SmoothL1=2.480
+[Epoch 10] Validation: 
+fire=0.08210722714648568
+mAP=0.08210722714648568
+[Epoch 11] Training cost: 775.008, CrossEntropy=2.398, SmoothL1=2.465
+[Epoch 11] Validation: 
+fire=0.1176351953773299
+mAP=0.1176351953773299
+[Epoch 12] Training cost: 641.611, CrossEntropy=2.391, SmoothL1=2.374
+[Epoch 12] Validation: 
+fire=0.12495287072058066
+mAP=0.12495287072058066
+[Epoch 13] Training cost: 677.636, CrossEntropy=2.379, SmoothL1=2.331
+[Epoch 13] Validation: 
+fire=0.10579043309757638
+mAP=0.10579043309757638
+[Epoch 14] Training cost: 794.878, CrossEntropy=2.357, SmoothL1=2.271
+[Epoch 14] Validation: 
+fire=0.14188672888162734
+mAP=0.14188672888162734
+[Epoch 15] Training cost: 682.537, CrossEntropy=2.373, SmoothL1=2.173
+[Epoch 15] Validation: 
+fire=0.18289957358816974
+mAP=0.18289957358816974
+[Epoch 16] Training cost: 644.057, CrossEntropy=2.352, SmoothL1=2.319
+[Epoch 16] Validation: 
+fire=0.09589071948229888
+mAP=0.09589071948229888
+[Epoch 17] Training cost: 797.766, CrossEntropy=2.357, SmoothL1=2.225
+[Epoch 17] Validation: 
+fire=0.14174327686106467
+mAP=0.14174327686106467
+[Epoch 18] Training cost: 627.534, CrossEntropy=2.354, SmoothL1=2.349
+[Epoch 18] Validation: 
+fire=0.14294665606708443
+mAP=0.14294665606708443
+[Epoch 19] Training cost: 644.084, CrossEntropy=2.357, SmoothL1=2.228
+[Epoch 19] Validation: 
+fire=0.13986844962504427
+mAP=0.13986844962504427
+[Epoch 20] Training cost: 759.677, CrossEntropy=2.352, SmoothL1=2.197
+[Epoch 20] Validation: 
+fire=0.18191140256047184
+mAP=0.18191140256047184
+[Epoch 21] Training cost: 673.059, CrossEntropy=2.346, SmoothL1=2.111
+[Epoch 21] Validation: 
+fire=0.144486888935845
+mAP=0.144486888935845
+[Epoch 22] Training cost: 650.653, CrossEntropy=2.324, SmoothL1=2.228
+[Epoch 22] Validation: 
+fire=0.22943121658548246
+mAP=0.22943121658548246
+[Epoch 23] Training cost: 758.859, CrossEntropy=2.323, SmoothL1=2.224
+[Epoch 23] Validation: 
+fire=0.15854161186349525
+mAP=0.15854161186349525
+[Epoch 24] Training cost: 672.632, CrossEntropy=2.308, SmoothL1=2.006
+[Epoch 24] Validation: 
+fire=0.18714385306746043
+mAP=0.18714385306746043
+[Epoch 25] Training cost: 678.691, CrossEntropy=2.336, SmoothL1=2.098
+[Epoch 25] Validation: 
+fire=0.15143315225818885
+mAP=0.15143315225818885
+[Epoch 26] Training cost: 752.079, CrossEntropy=2.307, SmoothL1=2.217
+[Epoch 26] Validation: 
+fire=0.13603769220689327
+mAP=0.13603769220689327
+[Epoch 27] Training cost: 740.073, CrossEntropy=2.311, SmoothL1=2.205
+[Epoch 27] Validation: 
+fire=0.17632718026665992
+mAP=0.17632718026665992
+[Epoch 28] Training cost: 682.019, CrossEntropy=2.313, SmoothL1=2.010
+[Epoch 28] Validation: 
+fire=0.21290322030929018
+mAP=0.21290322030929018
+[Epoch 29] Training cost: 824.404, CrossEntropy=2.317, SmoothL1=1.905
+[Epoch 29] Validation: 
+fire=0.2150627731646893
+mAP=0.2150627731646893
+[Epoch 30] Training cost: 653.041, CrossEntropy=2.308, SmoothL1=2.276
+[Epoch 30] Validation: 
+fire=0.1580689907835751
+mAP=0.1580689907835751
+[Epoch 31] Training cost: 791.908, CrossEntropy=2.309, SmoothL1=2.010
+[Epoch 31] Validation: 
+fire=0.15624332896801493
+mAP=0.15624332896801493
+[Epoch 32] Training cost: 653.585, CrossEntropy=2.311, SmoothL1=1.899
+[Epoch 32] Validation: 
+fire=0.20875462956792018
+mAP=0.20875462956792018
+[Epoch 33] Training cost: 679.936, CrossEntropy=2.293, SmoothL1=1.968
+[Epoch 33] Validation: 
+fire=0.2225854615383735
+mAP=0.2225854615383735
+[Epoch 34] Training cost: 792.033, CrossEntropy=2.287, SmoothL1=1.953
+[Epoch 34] Validation: 
+fire=0.2001019104734275
+mAP=0.2001019104734275
+[Epoch 35] Training cost: 660.685, CrossEntropy=2.293, SmoothL1=2.163
+[Epoch 35] Validation: 
+fire=0.21994418767954718
+mAP=0.21994418767954718
+[Epoch 36] Training cost: 730.522, CrossEntropy=2.297, SmoothL1=1.926
+[Epoch 36] Validation: 
+fire=0.20675332897555118
+mAP=0.20675332897555118
+[Epoch 37] Training cost: 840.081, CrossEntropy=2.315, SmoothL1=1.996
+[Epoch 37] Validation: 
+fire=0.15886591274097753
+mAP=0.15886591274097753
+[Epoch 38] Training cost: 740.208, CrossEntropy=2.281, SmoothL1=1.908
+[Epoch 38] Validation: 
+fire=0.1569463884738252
+mAP=0.1569463884738252
+[Epoch 39] Training cost: 684.052, CrossEntropy=2.278, SmoothL1=1.931
+[Epoch 39] Validation: 
+fire=0.20702917327652595
+mAP=0.20702917327652595
+[Epoch 40] Training cost: 783.261, CrossEntropy=2.282, SmoothL1=1.940
+[Epoch 40] Validation: 
+fire=0.19782406395636026
+mAP=0.19782406395636026
+[Epoch 41] Training cost: 716.608, CrossEntropy=2.301, SmoothL1=1.919
+[Epoch 41] Validation: 
+fire=0.19153372862755158
+mAP=0.19153372862755158
+[Epoch 42] Training cost: 688.570, CrossEntropy=2.279, SmoothL1=2.041
+[Epoch 42] Validation: 
+fire=0.176462150804122
+mAP=0.176462150804122
+[Epoch 43] Training cost: 792.035, CrossEntropy=2.276, SmoothL1=1.904
+[Epoch 43] Validation: 
+fire=0.16852992510685869
+mAP=0.16852992510685869
+[Epoch 44] Training cost: 691.063, CrossEntropy=2.280, SmoothL1=1.981
+[Epoch 44] Validation: 
+fire=0.190822060041285
+mAP=0.190822060041285
+[Epoch 45] Training cost: 715.127, CrossEntropy=2.250, SmoothL1=1.936
+[Epoch 45] Validation: 
+fire=0.1691155018897387
+mAP=0.1691155018897387
+[Epoch 46] Training cost: 824.914, CrossEntropy=2.271, SmoothL1=1.958
+[Epoch 46] Validation: 
+fire=0.18048269630505887
+mAP=0.18048269630505887
+[Epoch 47] Training cost: 656.699, CrossEntropy=2.282, SmoothL1=1.966
+[Epoch 47] Validation: 
+fire=0.2194921415974541
+mAP=0.2194921415974541
+[Epoch 48] Training cost: 665.056, CrossEntropy=2.275, SmoothL1=1.740
+[Epoch 48] Validation: 
+fire=0.18262084767492787
+mAP=0.18262084767492787
+[Epoch 49] Training cost: 818.032, CrossEntropy=2.260, SmoothL1=1.960
+[Epoch 49] Validation: 
+fire=0.18963610902714864
+mAP=0.18963610902714864
+[Epoch 50] Training cost: 671.450, CrossEntropy=2.273, SmoothL1=1.810
+[Epoch 50] Validation: 
+fire=0.19916346865201198
+mAP=0.19916346865201198
+[Epoch 51] Training cost: 688.624, CrossEntropy=2.243, SmoothL1=1.927
+[Epoch 51] Validation: 
+fire=0.20572900592260085
+mAP=0.20572900592260085
+[Epoch 52] Training cost: 760.501, CrossEntropy=2.260, SmoothL1=1.807
+[Epoch 52] Validation: 
+fire=0.15976345525071475
+mAP=0.15976345525071475
+[Epoch 53] Training cost: 701.349, CrossEntropy=2.269, SmoothL1=1.769
+[Epoch 53] Validation: 
+fire=0.20166285381560392
+mAP=0.20166285381560392
+[Epoch 54] Training cost: 684.531, CrossEntropy=2.270, SmoothL1=1.874
+[Epoch 54] Validation: 
+fire=0.15364690605612802
+mAP=0.15364690605612802
+[Epoch 55] Training cost: 782.223, CrossEntropy=2.249, SmoothL1=1.940
+[Epoch 55] Validation: 
+fire=0.2268314300687164
+mAP=0.2268314300687164
+[Epoch 56] Training cost: 673.658, CrossEntropy=2.249, SmoothL1=1.840
+[Epoch 56] Validation: 
+fire=0.20057488711197816
+mAP=0.20057488711197816
+[Epoch 57] Training cost: 664.623, CrossEntropy=2.250, SmoothL1=1.928
+[Epoch 57] Validation: 
+fire=0.20689932160986663
+mAP=0.20689932160986663
+[Epoch 58] Training cost: 776.380, CrossEntropy=2.248, SmoothL1=1.928
+[Epoch 58] Validation: 
+fire=0.20485958277924382
+mAP=0.20485958277924382
+[Epoch 59] Training cost: 690.737, CrossEntropy=2.241, SmoothL1=1.752
+[Epoch 59] Validation: 
+fire=0.24091819979469273
+mAP=0.24091819979469273
+[Epoch 60] Training cost: 700.692, CrossEntropy=2.240, SmoothL1=1.728
+[Epoch 60] Validation: 
+fire=0.19622062781064215
+mAP=0.19622062781064215
+[Epoch 61] Training cost: 816.299, CrossEntropy=2.229, SmoothL1=1.856
+[Epoch 61] Validation: 
+fire=0.24822685979687148
+mAP=0.24822685979687148
+[Epoch 62] Training cost: 688.693, CrossEntropy=2.238, SmoothL1=1.691
+[Epoch 62] Validation: 
+fire=0.1762649786059503
+mAP=0.1762649786059503
+[Epoch 63] Training cost: 766.143, CrossEntropy=2.219, SmoothL1=1.749
+[Epoch 63] Validation: 
+fire=0.21586664251996657
+mAP=0.21586664251996657
+[Epoch 64] Training cost: 651.650, CrossEntropy=2.219, SmoothL1=1.859
+[Epoch 64] Validation: 
+fire=0.17092387755181868
+mAP=0.17092387755181868
+[Epoch 65] Training cost: 684.011, CrossEntropy=2.225, SmoothL1=1.688
+[Epoch 65] Validation: 
+fire=0.24342783400171092
+mAP=0.24342783400171092
+[Epoch 66] Training cost: 790.455, CrossEntropy=2.238, SmoothL1=1.670
+[Epoch 66] Validation: 
+fire=0.1896638691353279
+mAP=0.1896638691353279
+[Epoch 67] Training cost: 658.108, CrossEntropy=2.230, SmoothL1=1.777
+[Epoch 67] Validation: 
+fire=0.17383319343012185
+mAP=0.17383319343012185
+[Epoch 68] Training cost: 659.024, CrossEntropy=2.207, SmoothL1=1.657
+[Epoch 68] Validation: 
+fire=0.19175132805443423
+mAP=0.19175132805443423
+[Epoch 69] Training cost: 785.477, CrossEntropy=2.225, SmoothL1=1.810
+[Epoch 69] Validation: 
+fire=0.15097813093486329
+mAP=0.15097813093486329
+[Epoch 70] Training cost: 689.119, CrossEntropy=2.219, SmoothL1=1.655
+[Epoch 70] Validation: 
+fire=0.14208965396302148
+mAP=0.14208965396302148
+[Epoch 71] Training cost: 658.922, CrossEntropy=2.217, SmoothL1=1.813
+[Epoch 71] Validation: 
+fire=0.15278861522873102
+mAP=0.15278861522873102
+[Epoch 72] Training cost: 806.560, CrossEntropy=2.235, SmoothL1=1.757
+[Epoch 72] Validation: 
+fire=0.1933540093745962
+mAP=0.1933540093745962
+[Epoch 73] Training cost: 726.521, CrossEntropy=2.201, SmoothL1=1.712
+[Epoch 73] Validation: 
+fire=0.16996442890849295
+mAP=0.16996442890849295
+[Epoch 74] Training cost: 691.609, CrossEntropy=2.201, SmoothL1=1.649
+[Epoch 74] Validation: 
+fire=0.184649648804584
+mAP=0.184649648804584
+[Epoch 75] Training cost: 801.947, CrossEntropy=2.190, SmoothL1=1.703
+[Epoch 75] Validation: 
+fire=0.1694805394600474
+mAP=0.1694805394600474
+[Epoch 76] Training cost: 698.956, CrossEntropy=2.204, SmoothL1=1.620
+[Epoch 76] Validation: 
+fire=0.21681055982343506
+mAP=0.21681055982343506
+[Epoch 77] Training cost: 671.798, CrossEntropy=2.209, SmoothL1=1.856
+[Epoch 77] Validation: 
+fire=0.17463392182942722
+mAP=0.17463392182942722
+[Epoch 78] Training cost: 831.640, CrossEntropy=2.194, SmoothL1=1.654
+[Epoch 78] Validation: 
+fire=0.17618670177385856
+mAP=0.17618670177385856
+[Epoch 79] Training cost: 668.817, CrossEntropy=2.187, SmoothL1=1.760
+[Epoch 79] Validation: 
+fire=0.1720085462077909
+mAP=0.1720085462077909
+[Epoch 80] Training cost: 678.029, CrossEntropy=2.190, SmoothL1=1.606
+[Epoch 80] Validation: 
+fire=0.16824733150368448
+mAP=0.16824733150368448
+[Epoch 81] Training cost: 829.111, CrossEntropy=2.185, SmoothL1=1.579
+[Epoch 81] Validation: 
+fire=0.23962650831544619
+mAP=0.23962650831544619
+[Epoch 82] Training cost: 671.546, CrossEntropy=2.197, SmoothL1=1.779
+[Epoch 82] Validation: 
+fire=0.22065677142981538
+mAP=0.22065677142981538
+[Epoch 83] Training cost: 719.437, CrossEntropy=2.175, SmoothL1=1.521
+[Epoch 83] Validation: 
+fire=0.17295872265916412
+mAP=0.17295872265916412
+[Epoch 84] Training cost: 809.341, CrossEntropy=2.165, SmoothL1=1.544
+[Epoch 84] Validation: 
+fire=0.16777425110876776
+mAP=0.16777425110876776
+[Epoch 85] Training cost: 702.583, CrossEntropy=2.187, SmoothL1=1.762
+[Epoch 85] Validation: 
+fire=0.17249207111026646
+mAP=0.17249207111026646
+[Epoch 86] Training cost: 692.748, CrossEntropy=2.179, SmoothL1=1.671
+[Epoch 86] Validation: 
+fire=0.18467652245686997
+mAP=0.18467652245686997
+[Epoch 87] Training cost: 832.861, CrossEntropy=2.162, SmoothL1=1.528
+[Epoch 87] Validation: 
+fire=0.18984424666242847
+mAP=0.18984424666242847
+[Epoch 88] Training cost: 719.006, CrossEntropy=2.177, SmoothL1=1.685
+[Epoch 88] Validation: 
+fire=0.16102810364630893
+mAP=0.16102810364630893
+[Epoch 89] Training cost: 691.733, CrossEntropy=2.171, SmoothL1=1.545
+[Epoch 89] Validation: 
+fire=0.16544919045510426
+mAP=0.16544919045510426
+[Epoch 90] Training cost: 809.787, CrossEntropy=2.168, SmoothL1=1.692
+[Epoch 90] Validation: 
+fire=0.2058074621691003
+mAP=0.2058074621691003
+[Epoch 91] Training cost: 707.207, CrossEntropy=2.170, SmoothL1=1.637
+[Epoch 91] Validation: 
+fire=0.21832507716266733
+mAP=0.21832507716266733
+[Epoch 92] Training cost: 748.687, CrossEntropy=2.186, SmoothL1=1.767
+[Epoch 92] Validation: 
+fire=0.21261496611268615
+mAP=0.21261496611268615
+[Epoch 93] Training cost: 886.633, CrossEntropy=2.146, SmoothL1=1.523
+[Epoch 93] Validation: 
+fire=0.15845777296892222
+mAP=0.15845777296892222
+[Epoch 94] Training cost: 711.923, CrossEntropy=2.154, SmoothL1=1.646
+[Epoch 94] Validation: 
+fire=0.1862712177461053
+mAP=0.1862712177461053
+[Epoch 95] Training cost: 838.052, CrossEntropy=2.148, SmoothL1=1.551
+[Epoch 95] Validation: 
+fire=0.2282945648984934
+mAP=0.2282945648984934
+[Epoch 96] Training cost: 713.163, CrossEntropy=2.135, SmoothL1=1.592
+[Epoch 96] Validation: 
+fire=0.18112318465076402
+mAP=0.18112318465076402
+[Epoch 97] Training cost: 766.588, CrossEntropy=2.131, SmoothL1=1.498
+[Epoch 97] Validation: 
+fire=0.16326409052507376
+mAP=0.16326409052507376
+[Epoch 98] Training cost: 873.783, CrossEntropy=2.157, SmoothL1=1.579
+[Epoch 98] Validation: 
+fire=0.16853190103918472
+mAP=0.16853190103918472
+[Epoch 99] Training cost: 743.769, CrossEntropy=2.154, SmoothL1=1.557
+[Epoch 99] Validation: 
+fire=0.18761504475482194
+mAP=0.18761504475482194
+[Epoch 100] Training cost: 748.796, CrossEntropy=2.136, SmoothL1=1.479
+[Epoch 100] Validation: 
+fire=0.18434935229652885
+mAP=0.18434935229652885
+[Epoch 101] Training cost: 927.052, CrossEntropy=2.127, SmoothL1=1.629
+[Epoch 101] Validation: 
+fire=0.20762263650283763
+mAP=0.20762263650283763
+[Epoch 102] Training cost: 761.948, CrossEntropy=2.148, SmoothL1=1.598
+[Epoch 102] Validation: 
+fire=0.23384289034129901
+mAP=0.23384289034129901
+[Epoch 103] Training cost: 770.776, CrossEntropy=2.149, SmoothL1=1.598
+[Epoch 103] Validation: 
+fire=0.18872013977975743
+mAP=0.18872013977975743
+[Epoch 104] Training cost: 846.498, CrossEntropy=2.136, SmoothL1=1.530
+[Epoch 104] Validation: 
+fire=0.26534768947867027
+mAP=0.26534768947867027
+[Epoch 105] Training cost: 800.540, CrossEntropy=2.108, SmoothL1=1.459
+[Epoch 105] Validation: 
+fire=0.24248297437044022
+mAP=0.24248297437044022
+[Epoch 106] Training cost: 809.411, CrossEntropy=2.128, SmoothL1=1.405
+[Epoch 106] Validation: 
+fire=0.2239238727409368
+mAP=0.2239238727409368
+[Epoch 107] Training cost: 880.940, CrossEntropy=2.148, SmoothL1=1.574
+[Epoch 107] Validation: 
+fire=0.15685492094160827
+mAP=0.15685492094160827
+[Epoch 108] Training cost: 745.811, CrossEntropy=2.133, SmoothL1=1.516
+[Epoch 108] Validation: 
+fire=0.18446152865428728
+mAP=0.18446152865428728
+[Epoch 109] Training cost: 756.469, CrossEntropy=2.150, SmoothL1=1.445
+[Epoch 109] Validation: 
+fire=0.17442466390841715
+mAP=0.17442466390841715
+[Epoch 110] Training cost: 920.962, CrossEntropy=2.134, SmoothL1=1.572
+[Epoch 110] Validation: 
+fire=0.22576923355152048
+mAP=0.22576923355152048
+[Epoch 111] Training cost: 777.481, CrossEntropy=2.076, SmoothL1=1.334
+[Epoch 111] Validation: 
+fire=0.23120061631449754
+mAP=0.23120061631449754
+[Epoch 112] Training cost: 765.291, CrossEntropy=2.111, SmoothL1=1.452
+[Epoch 112] Validation: 
+fire=0.17632025565041345
+mAP=0.17632025565041345
+[Epoch 113] Training cost: 848.213, CrossEntropy=2.153, SmoothL1=1.540
+[Epoch 113] Validation: 
+fire=0.2183521458647866
+mAP=0.2183521458647866
+[Epoch 114] Training cost: 756.391, CrossEntropy=2.085, SmoothL1=1.510
+[Epoch 114] Validation: 
+fire=0.21756356207248853
+mAP=0.21756356207248853
+[Epoch 115] Training cost: 743.811, CrossEntropy=2.119, SmoothL1=1.506
+[Epoch 115] Validation: 
+fire=0.22187844669014728
+mAP=0.22187844669014728
+[Epoch 116] Training cost: 848.714, CrossEntropy=2.068, SmoothL1=1.442
+[Epoch 116] Validation: 
+fire=0.23276636042707152
+mAP=0.23276636042707152
+[Epoch 117] Training cost: 728.282, CrossEntropy=2.094, SmoothL1=1.477
+[Epoch 117] Validation: 
+fire=0.1796165054060153
+mAP=0.1796165054060153
+[Epoch 118] Training cost: 720.493, CrossEntropy=2.113, SmoothL1=1.529
+[Epoch 118] Validation: 
+fire=0.2121970077982812
+mAP=0.2121970077982812
+[Epoch 119] Training cost: 821.143, CrossEntropy=2.115, SmoothL1=1.496
+[Epoch 119] Validation: 
+fire=0.16558658171003762
+mAP=0.16558658171003762
+[Epoch 120] Training cost: 741.323, CrossEntropy=2.088, SmoothL1=1.513
+[Epoch 120] Validation: 
+fire=0.24101214262720172
+mAP=0.24101214262720172
+[Epoch 121] Training cost: 748.008, CrossEntropy=2.091, SmoothL1=1.533
+[Epoch 121] Validation: 
+fire=0.2031651233758897
+mAP=0.2031651233758897
+[Epoch 122] Training cost: 854.177, CrossEntropy=2.097, SmoothL1=1.388
+[Epoch 122] Validation: 
+fire=0.22433862163184376
+mAP=0.22433862163184376
+[Epoch 123] Training cost: 696.279, CrossEntropy=2.090, SmoothL1=1.481
+[Epoch 123] Validation: 
+fire=0.1640396905593388
+mAP=0.1640396905593388
+[Epoch 124] Training cost: 815.285, CrossEntropy=2.084, SmoothL1=1.360
+[Epoch 124] Validation: 
+fire=0.16753811085013334
+mAP=0.16753811085013334
+[Epoch 125] Training cost: 850.398, CrossEntropy=2.084, SmoothL1=1.413
+[Epoch 125] Validation: 
+fire=0.24724637969290109
+mAP=0.24724637969290109
+[Epoch 126] Training cost: 749.498, CrossEntropy=2.080, SmoothL1=1.465
+[Epoch 126] Validation: 
+fire=0.23921333033117495
+mAP=0.23921333033117495
+[Epoch 127] Training cost: 839.092, CrossEntropy=2.078, SmoothL1=1.553
+[Epoch 127] Validation: 
+fire=0.20981239091483456
+mAP=0.20981239091483456
+[Epoch 128] Training cost: 745.047, CrossEntropy=2.067, SmoothL1=1.396
+[Epoch 128] Validation: 
+fire=0.17495638431083368
+mAP=0.17495638431083368
+[Epoch 129] Training cost: 725.181, CrossEntropy=2.096, SmoothL1=1.452
+[Epoch 129] Validation: 
+fire=0.17301662797670106
+mAP=0.17301662797670106
+[Epoch 130] Training cost: 849.396, CrossEntropy=2.085, SmoothL1=1.393
+[Epoch 130] Validation: 
+fire=0.20059103653883126
+mAP=0.20059103653883126
+[Epoch 131] Training cost: 722.441, CrossEntropy=2.041, SmoothL1=1.428
+[Epoch 131] Validation: 
+fire=0.1899711515693155
+mAP=0.1899711515693155
+[Epoch 132] Training cost: 720.519, CrossEntropy=2.068, SmoothL1=1.462
+[Epoch 132] Validation: 
+fire=0.2491498134053271
+mAP=0.2491498134053271
+[Epoch 133] Training cost: 828.349, CrossEntropy=2.042, SmoothL1=1.399
+[Epoch 133] Validation: 
+fire=0.1859553505709128
+mAP=0.1859553505709128
+[Epoch 134] Training cost: 712.129, CrossEntropy=2.061, SmoothL1=1.456
+[Epoch 134] Validation: 
+fire=0.17539989447852697
+mAP=0.17539989447852697
+[Epoch 135] Training cost: 722.960, CrossEntropy=2.066, SmoothL1=1.470
+[Epoch 135] Validation: 
+fire=0.1501355973614861
+mAP=0.1501355973614861
+[Epoch 136] Training cost: 818.241, CrossEntropy=2.050, SmoothL1=1.349
+[Epoch 136] Validation: 
+fire=0.18590568564408813
+mAP=0.18590568564408813
+[Epoch 137] Training cost: 769.959, CrossEntropy=2.012, SmoothL1=1.330
+[Epoch 137] Validation: 
+fire=0.22249721040763315
+mAP=0.22249721040763315
+[Epoch 138] Training cost: 720.122, CrossEntropy=2.057, SmoothL1=1.436
+[Epoch 138] Validation: 
+fire=0.20398147083142093
+mAP=0.20398147083142093
+[Epoch 139] Training cost: 857.105, CrossEntropy=2.024, SmoothL1=1.468
+[Epoch 139] Validation: 
+fire=0.16532850528774087
+mAP=0.16532850528774087
+[Epoch 140] Training cost: 738.470, CrossEntropy=2.014, SmoothL1=1.419
+[Epoch 140] Validation: 
+fire=0.17631846887135208
+mAP=0.17631846887135208
+[Epoch 141] Training cost: 762.905, CrossEntropy=2.014, SmoothL1=1.266
+[Epoch 141] Validation: 
+fire=0.1944482278995291
+mAP=0.1944482278995291
+[Epoch 142] Training cost: 831.523, CrossEntropy=2.044, SmoothL1=1.400
+[Epoch 142] Validation: 
+fire=0.18608204000562145
+mAP=0.18608204000562145
+[Epoch 143] Training cost: 708.650, CrossEntropy=2.028, SmoothL1=1.406
+[Epoch 143] Validation: 
+fire=0.17311783866101002
+mAP=0.17311783866101002
+[Epoch 144] Training cost: 685.377, CrossEntropy=2.028, SmoothL1=1.397
+[Epoch 144] Validation: 
+fire=0.19711379731083598
+mAP=0.19711379731083598
+[Epoch 145] Training cost: 829.251, CrossEntropy=2.010, SmoothL1=1.287
+[Epoch 145] Validation: 
+fire=0.17104424077889352
+mAP=0.17104424077889352
+[Epoch 146] Training cost: 686.281, CrossEntropy=1.999, SmoothL1=1.231
+[Epoch 146] Validation: 
+fire=0.2140929200883521
+mAP=0.2140929200883521
+[Epoch 147] Training cost: 723.831, CrossEntropy=2.065, SmoothL1=1.321
+[Epoch 147] Validation: 
+fire=0.20249259447617904
+mAP=0.20249259447617904
+[Epoch 148] Training cost: 858.936, CrossEntropy=1.970, SmoothL1=1.350
+[Epoch 148] Validation: 
+fire=0.14705742942535766
+mAP=0.14705742942535766
+[Epoch 149] Training cost: 689.188, CrossEntropy=2.052, SmoothL1=1.393
+[Epoch 149] Validation: 
+fire=0.14967887667520247
+mAP=0.14967887667520247
+[Epoch 150] Training cost: 709.027, CrossEntropy=2.021, SmoothL1=1.318
+[Epoch 150] Validation: 
+fire=0.19168379321144707
+mAP=0.19168379321144707
+[Epoch 151] Training cost: 881.850, CrossEntropy=1.992, SmoothL1=1.273
+[Epoch 151] Validation: 
+fire=0.2057225227379815
+mAP=0.2057225227379815
+[Epoch 152] Training cost: 752.548, CrossEntropy=1.993, SmoothL1=1.327
+[Epoch 152] Validation: 
+fire=0.184645522604847
+mAP=0.184645522604847
+[Epoch 153] Training cost: 796.414, CrossEntropy=2.034, SmoothL1=1.458
+[Epoch 153] Validation: 
+fire=0.2258386443971664
+mAP=0.2258386443971664
+[Epoch 154] Training cost: 908.988, CrossEntropy=1.978, SmoothL1=1.218
+[Epoch 154] Validation: 
+fire=0.18444881127091048
+mAP=0.18444881127091048
+[Epoch 155] Training cost: 750.871, CrossEntropy=1.972, SmoothL1=1.328
+[Epoch 155] Validation: 
+fire=0.1802089968755125
+mAP=0.1802089968755125
+[Epoch 156] Training cost: 794.022, CrossEntropy=2.042, SmoothL1=1.371
+[Epoch 156] Validation: 
+fire=0.21557369101300866
+mAP=0.21557369101300866
+[Epoch 157] Training cost: 878.092, CrossEntropy=2.009, SmoothL1=1.342
+[Epoch 157] Validation: 
+fire=0.16207914010398922
+mAP=0.16207914010398922
+[Epoch 158] Training cost: 708.801, CrossEntropy=1.990, SmoothL1=1.304
+[Epoch 158] Validation: 
+fire=0.21763053897734255
+mAP=0.21763053897734255
+[Epoch 159] Training cost: 823.077, CrossEntropy=1.974, SmoothL1=1.281
+[Epoch 159] Validation: 
+fire=0.14770901803920833
+mAP=0.14770901803920833
+[Epoch 160] Set learning rate to 0.0001
+[Epoch 160] Training cost: 717.151, CrossEntropy=2.029, SmoothL1=1.338
+[Epoch 160] Validation: 
+fire=0.1639444630574615
+mAP=0.1639444630574615
+[Epoch 161] Training cost: 789.728, CrossEntropy=2.016, SmoothL1=1.391
+[Epoch 161] Validation: 
+fire=0.16319787544331052
+mAP=0.16319787544331052
+[Epoch 162] Training cost: 795.495, CrossEntropy=2.057, SmoothL1=1.381
+[Epoch 162] Validation: 
+fire=0.1587117464221251
+mAP=0.1587117464221251
+[Epoch 163] Training cost: 724.696, CrossEntropy=1.966, SmoothL1=1.237
+[Epoch 163] Validation: 
+fire=0.1762655808403488
+mAP=0.1762655808403488
+[Epoch 164] Training cost: 714.293, CrossEntropy=1.991, SmoothL1=1.387
+[Epoch 164] Validation: 
+fire=0.17865826663144396
+mAP=0.17865826663144396
+[Epoch 165] Training cost: 821.105, CrossEntropy=1.987, SmoothL1=1.338
+[Epoch 165] Validation: 
+fire=0.19011374352841626
+mAP=0.19011374352841626
+[Epoch 166] Training cost: 723.313, CrossEntropy=2.042, SmoothL1=1.501
+[Epoch 166] Validation: 
+fire=0.19280609823006076
+mAP=0.19280609823006076
+[Epoch 167] Training cost: 714.978, CrossEntropy=1.932, SmoothL1=1.198
+[Epoch 167] Validation: 
+fire=0.16351766566894949
+mAP=0.16351766566894949
+[Epoch 168] Training cost: 823.451, CrossEntropy=1.936, SmoothL1=1.218
+[Epoch 168] Validation: 
+fire=0.1622263636352992
+mAP=0.1622263636352992
+[Epoch 169] Training cost: 720.734, CrossEntropy=1.940, SmoothL1=1.245
+[Epoch 169] Validation: 
+fire=0.16549501689872193
+mAP=0.16549501689872193
+[Epoch 170] Training cost: 719.607, CrossEntropy=1.972, SmoothL1=1.220
+[Epoch 170] Validation: 
+fire=0.16799651574668925
+mAP=0.16799651574668925
+[Epoch 171] Training cost: 818.587, CrossEntropy=1.931, SmoothL1=1.254
+[Epoch 171] Validation: 
+fire=0.17804388803320376
+mAP=0.17804388803320376
+[Epoch 172] Training cost: 766.164, CrossEntropy=1.996, SmoothL1=1.423
+[Epoch 172] Validation: 
+fire=0.18465081184240506
+mAP=0.18465081184240506
+[Epoch 173] Training cost: 691.001, CrossEntropy=1.938, SmoothL1=1.149
+[Epoch 173] Validation: 
+fire=0.18788730207370902
+mAP=0.18788730207370902
+[Epoch 174] Training cost: 862.510, CrossEntropy=1.966, SmoothL1=1.244
+[Epoch 174] Validation: 
+fire=0.17637197609795943
+mAP=0.17637197609795943
+[Epoch 175] Training cost: 692.044, CrossEntropy=1.964, SmoothL1=1.373
+[Epoch 175] Validation: 
+fire=0.18229728327084474
+mAP=0.18229728327084474
+[Epoch 176] Training cost: 688.326, CrossEntropy=1.979, SmoothL1=1.317
+[Epoch 176] Validation: 
+fire=0.16192339325172378
+mAP=0.16192339325172378
+[Epoch 177] Training cost: 806.364, CrossEntropy=1.936, SmoothL1=1.284
+[Epoch 177] Validation: 
+fire=0.17214734501106704
+mAP=0.17214734501106704
+[Epoch 178] Training cost: 736.424, CrossEntropy=1.969, SmoothL1=1.265
+[Epoch 178] Validation: 
+fire=0.20366251195931237
+mAP=0.20366251195931237
+[Epoch 179] Training cost: 714.242, CrossEntropy=1.971, SmoothL1=1.269
+[Epoch 179] Validation: 
+fire=0.16807546690374692
+mAP=0.16807546690374692
+[Epoch 180] Training cost: 862.061, CrossEntropy=1.936, SmoothL1=1.194
+[Epoch 180] Validation: 
+fire=0.16200068673707863
+mAP=0.16200068673707863
+[Epoch 181] Training cost: 741.318, CrossEntropy=1.956, SmoothL1=1.263
+[Epoch 181] Validation: 
+fire=0.15779884894351634
+mAP=0.15779884894351634
+[Epoch 182] Training cost: 697.437, CrossEntropy=1.913, SmoothL1=1.160
+[Epoch 182] Validation: 
+fire=0.17235526093255643
+mAP=0.17235526093255643
+[Epoch 183] Training cost: 815.087, CrossEntropy=1.931, SmoothL1=1.187
+[Epoch 183] Validation: 
+fire=0.18795605269985857
+mAP=0.18795605269985857
+[Epoch 184] Training cost: 859.710, CrossEntropy=1.950, SmoothL1=1.171
+[Epoch 184] Validation: 
+fire=0.17213738591378755
+mAP=0.17213738591378755
+[Epoch 185] Training cost: 791.494, CrossEntropy=1.939, SmoothL1=1.219
+[Epoch 185] Validation: 
+fire=0.18026493884330935
+mAP=0.18026493884330935
+[Epoch 186] Training cost: 811.652, CrossEntropy=1.965, SmoothL1=1.259
+[Epoch 186] Validation: 
+fire=0.1757411310474695
+mAP=0.1757411310474695
+[Epoch 187] Training cost: 729.265, CrossEntropy=1.962, SmoothL1=1.256
+[Epoch 187] Validation: 
+fire=0.17772583466170172
+mAP=0.17772583466170172
+[Epoch 188] Training cost: 736.589, CrossEntropy=1.918, SmoothL1=1.156
+[Epoch 188] Validation: 
+fire=0.17759482135108254
+mAP=0.17759482135108254
+[Epoch 189] Training cost: 837.671, CrossEntropy=1.944, SmoothL1=1.225
+[Epoch 189] Validation: 
+fire=0.17087492728435721
+mAP=0.17087492728435721
+[Epoch 190] Training cost: 751.767, CrossEntropy=1.964, SmoothL1=1.285
+[Epoch 190] Validation: 
+fire=0.17724248511443358
+mAP=0.17724248511443358
+[Epoch 191] Training cost: 849.571, CrossEntropy=1.968, SmoothL1=1.316
+[Epoch 191] Validation: 
+fire=0.17740380060020652
+mAP=0.17740380060020652
+[Epoch 192] Training cost: 704.022, CrossEntropy=1.948, SmoothL1=1.172
+[Epoch 192] Validation: 
+fire=0.1728856991037615
+mAP=0.1728856991037615
+[Epoch 193] Training cost: 743.766, CrossEntropy=1.955, SmoothL1=1.312
+[Epoch 193] Validation: 
+fire=0.16912891145971284
+mAP=0.16912891145971284
+[Epoch 194] Training cost: 836.772, CrossEntropy=1.918, SmoothL1=1.371
+[Epoch 194] Validation: 
+fire=0.1788866563827823
+mAP=0.1788866563827823
+[Epoch 195] Training cost: 769.208, CrossEntropy=1.938, SmoothL1=1.238
+[Epoch 195] Validation: 
+fire=0.17813694182209788
+mAP=0.17813694182209788
+[Epoch 196] Training cost: 734.011, CrossEntropy=1.985, SmoothL1=1.300
+[Epoch 196] Validation: 
+fire=0.1815913193196938
+mAP=0.1815913193196938
+[Epoch 197] Training cost: 952.351, CrossEntropy=1.923, SmoothL1=1.180
+[Epoch 197] Validation: 
+fire=0.18344816853944645
+mAP=0.18344816853944645
+[Epoch 198] Training cost: 732.871, CrossEntropy=1.962, SmoothL1=1.230
+[Epoch 198] Validation: 
+fire=0.18215542844295224
+mAP=0.18215542844295224
+[Epoch 199] Training cost: 749.951, CrossEntropy=1.960, SmoothL1=1.294
+[Epoch 199] Validation: 
+fire=0.17909510945617027
+mAP=0.17909510945617027
+[Epoch 200] Set learning rate to 1e-05
+[Epoch 200] Training cost: 870.064, CrossEntropy=1.943, SmoothL1=1.230
+[Epoch 200] Validation: 
+fire=0.1748073478133751
+mAP=0.1748073478133751
+[Epoch 201] Training cost: 764.648, CrossEntropy=1.971, SmoothL1=1.207
+[Epoch 201] Validation: 
+fire=0.17273571801435578
+mAP=0.17273571801435578
+[Epoch 202] Training cost: 741.347, CrossEntropy=1.957, SmoothL1=1.278
+[Epoch 202] Validation: 
+fire=0.17586367595013447
+mAP=0.17586367595013447
+[Epoch 203] Training cost: 888.024, CrossEntropy=1.947, SmoothL1=1.319
+[Epoch 203] Validation: 
+fire=0.18738080898875634
+mAP=0.18738080898875634
+[Epoch 204] Training cost: 728.802, CrossEntropy=1.920, SmoothL1=1.238
+[Epoch 204] Validation: 
+fire=0.18333882120868836
+mAP=0.18333882120868836
+[Epoch 205] Training cost: 760.077, CrossEntropy=1.936, SmoothL1=1.184
+[Epoch 205] Validation: 
+fire=0.1736046839495115
+mAP=0.1736046839495115
+[Epoch 206] Training cost: 843.125, CrossEntropy=1.968, SmoothL1=1.281
+[Epoch 206] Validation: 
+fire=0.17675931672270093
+mAP=0.17675931672270093
+[Epoch 207] Training cost: 777.131, CrossEntropy=1.963, SmoothL1=1.273
+[Epoch 207] Validation: 
+fire=0.17277032255164645
+mAP=0.17277032255164645
+[Epoch 208] Training cost: 847.717, CrossEntropy=1.937, SmoothL1=1.200
+[Epoch 208] Validation: 
+fire=0.17398785425101218
+mAP=0.17398785425101218
+[Epoch 209] Training cost: 897.033, CrossEntropy=1.921, SmoothL1=1.225
+[Epoch 209] Validation: 
+fire=0.17479436854966007
+mAP=0.17479436854966007
+[Epoch 210] Training cost: 784.495, CrossEntropy=1.955, SmoothL1=1.274
+[Epoch 210] Validation: 
+fire=0.17953923403547267
+mAP=0.17953923403547267
+[Epoch 211] Training cost: 776.160, CrossEntropy=1.942, SmoothL1=1.246
+[Epoch 211] Validation: 
+fire=0.18151061271105903
+mAP=0.18151061271105903
+[Epoch 212] Training cost: 899.568, CrossEntropy=1.932, SmoothL1=1.276
+[Epoch 212] Validation: 
+fire=0.1814180265272825
+mAP=0.1814180265272825
+[Epoch 213] Training cost: 756.475, CrossEntropy=1.942, SmoothL1=1.213
+[Epoch 213] Validation: 
+fire=0.1746978747065152
+mAP=0.1746978747065152
+[Epoch 214] Training cost: 776.826, CrossEntropy=1.978, SmoothL1=1.318
+[Epoch 214] Validation: 
+fire=0.18145033601232186
+mAP=0.18145033601232186
+[Epoch 215] Training cost: 930.468, CrossEntropy=1.924, SmoothL1=1.234
+[Epoch 215] Validation: 
+fire=0.17396959523468364
+mAP=0.17396959523468364
+[Epoch 216] Training cost: 767.364, CrossEntropy=1.967, SmoothL1=1.363
+[Epoch 216] Validation: 
+fire=0.17865190610606707
+mAP=0.17865190610606707
+[Epoch 217] Training cost: 772.055, CrossEntropy=1.968, SmoothL1=1.313
+[Epoch 217] Validation: 
+fire=0.17122423035033596
+mAP=0.17122423035033596
+[Epoch 218] Training cost: 896.239, CrossEntropy=1.953, SmoothL1=1.282
+[Epoch 218] Validation: 
+fire=0.17601179972423092
+mAP=0.17601179972423092
+[Epoch 219] Training cost: 787.540, CrossEntropy=1.965, SmoothL1=1.311
+[Epoch 219] Validation: 
+fire=0.17005759298494444
+mAP=0.17005759298494444
+[Epoch 220] Training cost: 830.020, CrossEntropy=1.923, SmoothL1=1.235
+[Epoch 220] Validation: 
+fire=0.17095254853198558
+mAP=0.17095254853198558
+[Epoch 221] Training cost: 901.246, CrossEntropy=1.960, SmoothL1=1.124
+[Epoch 221] Validation: 
+fire=0.17042086002369333
+mAP=0.17042086002369333
+[Epoch 222] Training cost: 761.504, CrossEntropy=1.950, SmoothL1=1.140
+[Epoch 222] Validation: 
+fire=0.17084130401626674
+mAP=0.17084130401626674
+[Epoch 223] Training cost: 897.449, CrossEntropy=1.918, SmoothL1=1.192
+[Epoch 223] Validation: 
+fire=0.17100014499057561
+mAP=0.17100014499057561
+[Epoch 224] Training cost: 754.044, CrossEntropy=1.935, SmoothL1=1.201
+[Epoch 224] Validation: 
+fire=0.17307990109629903
+mAP=0.17307990109629903
+[Epoch 225] Training cost: 793.006, CrossEntropy=1.890, SmoothL1=1.109
+[Epoch 225] Validation: 
+fire=0.17696606616710284
+mAP=0.17696606616710284
+[Epoch 226] Training cost: 845.265, CrossEntropy=1.938, SmoothL1=1.216
+[Epoch 226] Validation: 
+fire=0.17241081840032366
+mAP=0.17241081840032366
+[Epoch 227] Training cost: 819.181, CrossEntropy=1.964, SmoothL1=1.279
+[Epoch 227] Validation: 
+fire=0.16826181542905463
+mAP=0.16826181542905463
+[Epoch 228] Training cost: 747.208, CrossEntropy=1.948, SmoothL1=1.208
+[Epoch 228] Validation: 
+fire=0.1742130624876649
+mAP=0.1742130624876649
+[Epoch 229] Training cost: 827.713, CrossEntropy=1.926, SmoothL1=1.271
+[Epoch 229] Validation: 
+fire=0.18145529500435334
+mAP=0.18145529500435334
+[Epoch 230] Training cost: 770.960, CrossEntropy=1.948, SmoothL1=1.248
+[Epoch 230] Validation: 
+fire=0.17559773141077548
+mAP=0.17559773141077548
+[Epoch 231] Training cost: 738.629, CrossEntropy=1.963, SmoothL1=1.332
+[Epoch 231] Validation: 
+fire=0.17429712019709492
+mAP=0.17429712019709492
+[Epoch 232] Training cost: 914.419, CrossEntropy=1.950, SmoothL1=1.236
+[Epoch 232] Validation: 
+fire=0.17247853739427324
+mAP=0.17247853739427324
+[Epoch 233] Training cost: 835.345, CrossEntropy=1.937, SmoothL1=1.288
+[Epoch 233] Validation: 
+fire=0.17142566020533917
+mAP=0.17142566020533917
+[Epoch 234] Training cost: 747.974, CrossEntropy=1.979, SmoothL1=1.273
+[Epoch 234] Validation: 
+fire=0.17466648581565045
+mAP=0.17466648581565045
+[Epoch 235] Training cost: 908.184, CrossEntropy=1.940, SmoothL1=1.213
+[Epoch 235] Validation: 
+fire=0.17456704386709535
+mAP=0.17456704386709535
+[Epoch 236] Training cost: 751.339, CrossEntropy=1.929, SmoothL1=1.195
+[Epoch 236] Validation: 
+fire=0.17056973485960744
+mAP=0.17056973485960744
+[Epoch 237] Training cost: 773.397, CrossEntropy=1.986, SmoothL1=1.320
+[Epoch 237] Validation: 
+fire=0.17627285680706
+mAP=0.17627285680706
+[Epoch 238] Training cost: 860.833, CrossEntropy=1.998, SmoothL1=1.280
+[Epoch 238] Validation: 
+fire=0.17470785385020998
+mAP=0.17470785385020998
+[Epoch 239] Training cost: 698.470, CrossEntropy=1.913, SmoothL1=1.200
+[Epoch 239] Validation: 
+fire=0.17188815866203988
+mAP=0.17188815866203988

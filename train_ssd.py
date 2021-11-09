@@ -24,13 +24,13 @@ from gluoncv.utils.metrics.accuracy import Accuracy
 
 from mxnet.contrib import amp
 
-TARGET_CLASSES = ['face']
+TARGET_CLASSES = ['fire']
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train SSD networks.')
-    parser.add_argument('--network', type=str, default='vgg16_atrous',
+    parser.add_argument('--network', type=str, default='mobilenet1.0',
                         help="Base network name which serves as feature extraction base.")
-    parser.add_argument('--data-shape', type=int, default=300,
+    parser.add_argument('--data-shape', type=int, default=512,
                         help="Input data shape, use 300, 512.")
     parser.add_argument('--batch-size', type=int, default=32,
                         help='Training mini-batch size')
@@ -88,8 +88,8 @@ def parse_args():
 
 def get_dataset(dataset, args):
     if dataset.lower() == 'voc':
-        train_dataset = gcv.data.RecordFileDetection('datasets/train.rec')
-        val_dataset = gcv.data.RecordFileDetection('datasets/val.rec')
+        train_dataset = gcv.data.RecordFileDetection('datasets/train_data.rec')
+        val_dataset = gcv.data.RecordFileDetection('datasets/valid_data.rec')
         val_metric = VOC07MApMetric(iou_thresh=0.5, class_names=TARGET_CLASSES)
     else:
         raise NotImplementedError('Dataset: {} not implemented.'.format(dataset))
@@ -261,19 +261,18 @@ if __name__ == '__main__':
 
     # training contexts
     if args.horovod:
-        ctx = [mx.gpu(hvd.local_rank())]
+        ctx = [mx.cpu()]
     else:
-        ctx = [mx.gpu(int(i)) for i in args.gpus.split(',') if i.strip()]
-        ctx = ctx if ctx else [mx.cpu()]
+        ctx = [mx.cpu()]
 
     # network
     net_name = '_'.join(('ssd', str(args.data_shape), args.network, args.dataset))
     args.save_prefix += net_name
     # net = get_model(net_name, pretrained_base=True, norm_layer=gluon.nn.BatchNorm)
-    net = gcv.model_zoo.get_model('ssd_300_vgg16_atrous_custom', 
+    net = get_model('ssd_512_mobilenet1.0_custom', 
                                   classes=TARGET_CLASSES,
                                   pretrained_base=False,
-                                  transfer='voc')
+                                  transfer="voc")
     print(net.classes)
     async_net = net
 
