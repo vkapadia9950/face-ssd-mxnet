@@ -47,7 +47,7 @@ Move all generated files to `datasets` directory
 
 `mv *.lst *.idx *.rec datasets`
 
-## 2. Train SSD-Face
+## 2. Train SSD-Fire
 After the preparation process is successfully done. The training procedure can be started by the following command:
 
 `python train_ssd.py`
